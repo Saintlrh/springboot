@@ -1,0 +1,19 @@
+server:
+  servlet:
+    path: "*.do"
+logging:
+  level:
+    com.leyou: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis1
+    username: root
+    password: '19950520.'
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.leyou.pojo
+
+  # mapper-locations: mapper/*.xml
